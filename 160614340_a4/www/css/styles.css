@@ -1,0 +1,234 @@
+
+p#acct-name {
+    font-family: Verdana, Arial;
+    font-size: 28px;
+}
+
+p#acct-bio{
+    font-family: Verdana, Arial;
+    font-size: 14px;
+    max-width: 460px;
+}
+
+.acct-info {
+    padding-top: 50px;
+}
+
+#acct-details {
+    display: inline;
+    padding-left: 25px;
+}
+
+.card {
+    max-width: 293px;
+    margin: 9px;
+    cursor: pointer;
+}
+
+.all-posts {
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 935px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 400px) {
+
+    #acct-details {
+        padding: 0;
+        text-align: center;
+    }
+
+    p#acct-name {
+        text-align: center;
+    }
+    
+    p#acct-bio {
+        text-align: center;
+    }
+}
+
+
+
+/* Desktop */
+@media only screen and (min-width: 961px) {
+    #acct-details {
+        padding: 25;
+        display: inline;
+    }
+}
+
+
+/* <<------------------ASSIGNMENT 4 ------------------>>*/
+
+/* The Modal (background) */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    left: 0;
+    top: 0;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+    background-color: #fefefe;
+    margin: auto;
+    max-width: 935px;
+    max-height: 600px;
+    flex-wrap: wrap;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Blades */
+.card-image-top-exanded{
+    max-width: 600px;
+    max-height: 600px;
+
+}
+
+.comments-body {
+
+}
+
+.comments-user-general{
+    width: 332px;
+}
+
+.comments-user {
+    background-color: #fefefe;
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    padding: 32px 32px;
+}
+.comments-user2 {
+    background-color: #fefefe;
+    padding: 32px 32px;
+}
+
+.comments-image-user {
+    max-width: 130px;
+    max-height: 58px;
+
+    border-radius: 50%;
+    /* padding: 32px; */
+}
+
+.comments-wrapper {
+    display: flex;
+    padding-top: 10px;
+}
+
+.comments-user-name {
+    padding-left: 20px;
+    padding: 10px 0px 0px 20px;
+}
+
+.comments-user-location{
+    padding-left: 20px;
+    font-size: small;
+    position: relative;
+    top: -5px;
+}
+.comments-user-location {
+}
+/* Utils */
+.column-flex {
+    display: flex;
+    flex-direction: column;
+}
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.sm-text-1{
+    position: absolute;
+    top: 269px;
+    right: 200px;
+    opacity: .8;
+    font-size: small;
+}
+
+.icons{
+    width: 30px;
+    margin: 5px;
+}
+
+.comment-footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.comment-footer{
+    margin: 0px 10px;
+    position: relative;
+    top: 90px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.time{
+    font-size: xx-small;
+}
+
+/* Desktop */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+
+
+
+/* Tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    #acct-details {
+        padding: 25;
+        display: inline;
+    }
+    .modal-content {
+        max-width: 600px;
+    }
+    .comments-user-general {
+        width: 600px;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 425px) {
+    .card-image-top-exanded{
+        max-width: 300px;
+        margin: auto;
+    }
+    .comments-user{
+        padding: 10px 32px;
+        margin: auto;
+    }
+    .comments-user-general {
+        display: none;
+    }
+    .comment-footer{
+        padding: 20px 0px;
+        position: relative;
+        top: 0px;
+        left: 60px;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+    }
+}

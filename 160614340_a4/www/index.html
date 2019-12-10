@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                crossorigin="anonymous">
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Document</title>
+</head>
+
+<body onresize="toggleImg()">
+        <div class="acct-info d-flex align-items-center justify-content-center flex-wrap">
+                <img class="rounded-circle" src="./img/avatar.jpg" width="150px" alt="">
+                <div id="acct-details">
+                        <p id="acct-name">dogsofinstagram</p>
+                        <p id="acct-bio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum inventore qui
+                                dolorum necessitatibus quisquam molestias iste.</p>
+                </div>
+        </div>
+        <br>
+        <div class="all-posts d-flex align-items-center justify-content-center flex-wrap">
+                <div onclick="popUp('myModal', 'card1')" id="card1" class="card">
+                        <img class="card-image-top" src="./img/casey-horner-4rDCa5hBlCs-unsplash.jpg" width="293px"
+                                alt="">
+                </div>
+                <!--The Modal-->
+                <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                                <!-- Blade 1 -->
+                                <div id="comment-user-top-1" class="row-flex comments-user">
+                                        <img class="comments-image-user" src="./img/avatar.jpg">
+                                        <div class="column-flex">
+                                                <span class="comments-user-name"><b>random_username</b></span>
+                                                <span class="comments-user-location">Nagano Prefecture</span>
+                                        </div>
+                                </div>
+                                <img class="card-image-top-exanded" src="./img/casey-horner-4rDCa5hBlCs-unsplash.jpg"
+                                        alt="">
+
+                                <div class="comments-body">
+                                        <!-- Blade 1 -->
+                                        <div id="comment-user-top-11" class="row-flex comments-user">
+                                                <img class="comments-image-user" src="./img/avatar.jpg">
+                                                <div class="column-flex">
+                                                        <span class="comments-user-name"><b>random_username</b></span>
+                                                        <span class="comments-user-location">Nagano Prefecture</span>
+                                                </div>
+                                        </div>
+
+                                        <div id="comments-user-general"
+                                                class="row-flex comments-user-general comments-user2">
+                                                <img class="comments-image-user"
+                                                        src="./img/westboundary-photography-chris-gill-lBL7rSRaNGs-unsplash.jpg">
+                                                <div class="row-flex">
+                                                        <!-- <span class="comments-user-name"></span> -->
+                                                        <span class="comments-user-location"><b>SomeUser</b>
+                                                                Ipsum
+                                                                inventore qui
+                                                                dolorum necessitatibus quisquam molestias
+                                                                iste.</span>
+                                                </div>
+                                        </div>
+                                        <span class="sm-text-1">15m</span>
+
+                                        <div id="comments-user-general"
+                                                class="row-flex comments-user-general comments-user2">
+                                                <img class="comments-image-user"
+                                                        src="./img/amanda-phung-1w2xsyc2wwI-unsplash.jpg">
+                                                <div class="row-flex">
+                                                        <!-- <span class="comments-user-name"></span> -->
+                                                        <span class="comments-user-location"><b>FakeUser</b>
+                                                                Ipsum
+                                                                inventore qui
+                                                                dolorum necessitatibus quisquam molestias
+                                                                iste.</span>
+                                                </div>
+                                        </div>
+
+                                        <div class="comment-footer">
+                                                <div class="comment-footer-icons">
+                                                        <div class="comment-footer-icons-left">
+                                                                <img class="icons"
+                                                                        src="https://img.icons8.com/metro/52/000000/like.png">
+                                                                <img class="icons"
+                                                                        src="https://img.icons8.com/metro/26/000000/topic.png">
+                                                                <img class="icons"
+                                                                        src="https://img.icons8.com/material-rounded/30/000000/share-rounded.png">
+                                                        </div>
+                                                        <div class="comment-footer-icons-right">
+                                                                <img class="icons"
+                                                                        src="https://img.icons8.com/ios/50/000000/add-bookmark.png">
+                                                        </div>
+                                                </div>
+                                                <div class="column-flex">
+                                                        <span class="likes"><b>255 Likes</b></span>
+                                                        <span class="time">13 MINUTES AGO</span>
+                                                </div>
+                                        </div>
+
+                                </div>
+                        </div>
+                </div>
+
+
+                <div onclick="popUp('myModal', 'card2')" class="card">
+                        <img id="card2" class="card-image-top" src="./img/ivana-cajina-MBkQKiH14ng-unsplash.jpg"
+                                width="293px" alt="">
+                </div>
+                <div onclick="popUp('myModal', 'card3')" class="card">
+                        <img id="card3" class="card-image-top" src="./img/joey-kyber-sFLVTqNzG2I-unsplash.jpg"
+                                width="293px" alt="">
+                </div>
+                <div onclick="popUp('myModal', 'card4')" class="card">
+                        <img id="card4" class="card-image-top" src="./img/justin-kauffman-a8lTjWJJgLA-unsplash.jpg"
+                                width="293px" alt="">
+                </div>
+                <div onclick="popUp('myModal', 'card5')" class="card">
+                        <img id="card5" class="card-image-top" src="./img/luca-bravo-ny6qxqv_m04-unsplash.jpg"
+                                width="293px" alt="">
+                </div>
+                <div onclick="popUp('myModal', 'card6')" class="card">
+                        <img id="card6" class="card-image-top" src="./img/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg"
+                                width="293px" alt="">
+                </div>
+                <div onclick="popUp('myModal', 'card7')" class="card">
+                        <img id="card7" class="card-image-top" src="./img/redcharlie-k2zWqv_yfNM-unsplash.jpg"
+                                width="293px" alt="">
+                </div>
+                <div onclick="popUp('myModal', 'card8')" class="card">
+                        <img id="card8" class="card-image-top" src="./img/shifaaz-shamoon-oR0uERTVyD0-unsplash.jpg"
+                                width="293px" alt="">
+                </div>
+                <div onclick="popUp('myModal', 'card9')" class="card">
+                        <img id="card9" class="card-image-top" src="./img/sora-sagano-Dksk8szLRN0-unsplash.jpg"
+                                width="293px" alt="">
+                </div>
+                <div onclick="popUp('myModal', 'card10')" class="card">
+                        <img id="card10" class="card-image-top" src="./img/vincent-van-zalinge-_d0zgyMmYT8-unsplash.jpg"
+                                width="293px" alt="">
+                </div>
+                <div onclick="popUp('myModal', 'card11')" class="card">
+                        <img id="card11" class="card-image-top" src="./img/vincent-van-zalinge-vUNQaTtZeOo-unsplash.jpg"
+                                width="293px" alt="">
+                </div>
+                <div onclick="popUp('myModal', 'card12')" class="card">
+                        <img id="card12" class="card-image-top"
+                                src="./img/westboundary-photography-chris-gill-lBL7rSRaNGs-unsplash.jpg" width="293px"
+                                alt="">
+                </div>
+        </div>
+
+        <script>
+
+
+                var x = document.getElementById("comment-user-top-1");
+                var y = document.getElementById("comment-user-top-11");
+                var z = document.getElementsByClassName("comments-user-general")
+
+                if (window.innerWidth > 425) {
+                        x.style.display = "none"
+                        y.style.display = "block"
+                }
+                else if (window.innerWidth <= 425) {
+                        y.style.display = "none"
+                        x.style.display = "inherit"
+                        z.style.display = "none"
+                }
+
+                function toggleImg() {
+                        if (window.innerWidth > 425) {
+                                x.style.display = "none"
+                                y.style.display = "block"
+                        }
+                        else if (window.innerWidth <= 425) {
+                                y.style.display = "none"
+                                x.style.display = "inherit"
+                        }
+                };
+
+                function popUp(modalId, cardId) {
+                        // Get the modal
+                        var modal = document.getElementById(modalId);
+
+                        // Get the button that opens the modal
+                        var btn = document.getElementById(cardId);
+
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks the button, open the modal 
+                        btn.onclick = function () {
+                                modal.style.display = "flex";
+                        }
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function (event) {
+                                if (event.target == modal) {
+                                        modal.style.display = "none";
+                                }
+                        }
+                }
+
+        </script>
+
+</body>
+
+</html>
